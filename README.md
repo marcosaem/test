@@ -5,13 +5,19 @@
 
 docker pull ubuntu
 
-docker build -t test_devops:v1.0
+docker build -t test_devops:1
 
-docker run -d -p 5000:5000 ubuntu
+docker run -d -it -p 5000:5000 test_devops:1
+
+# Validacion contenedor
+
+docker images 
+
+docker ps
 
 ## Status 
 
-systemctl python status
+docker exec -it CONTAINER sh -c service python status
 
 ## Run
 
