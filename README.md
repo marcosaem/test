@@ -21,8 +21,8 @@ docker exec -it CONTAINER sh -c service python status
 
 ## Run
 
-run service.py
+python service.py
 
 ## curl
 
-curl http://localhost:5000
+web http://0.0.0.0:5000
